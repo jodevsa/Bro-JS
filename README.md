@@ -89,7 +89,7 @@ bro.onBatches(20, {
         delete event.uid;
     }
     /// next:is  a function that calls for the next batch !
-    /// be aware if next is'nt invoked , you'll never get the next batch !!
+    /// be aware if next isn't invoked , you'll never get the next batch !!
 }).on("*", function(batch, next) {
     console.log("next batch is ready!");
     /// consume batch
